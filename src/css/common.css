@@ -41,12 +41,9 @@ button[data-stop] {
   margin-left: 20px;
 }
 
-button[data-start]:hover,
-button[data-stop]:hover,
-button[data-start]:focus,
+button[data-stop]:focus,
 button[data-start]:focus {
   scale: 1.1;
-   /* background-color: #9992b4; */
 }
 
 .timer {
