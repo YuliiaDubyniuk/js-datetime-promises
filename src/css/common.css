@@ -42,9 +42,7 @@ button[data-stop] {
 }
 
 button[data-stop]:hover,
-button[data-start]:hover,
-button[data-stop]:focus,
-button[data-start]:focus{
+button[data-start]:hover{
   scale: 1.1;
 }
 
