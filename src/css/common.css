@@ -41,8 +41,8 @@ button[data-stop] {
   margin-left: 20px;
 }
 
-button[data-start]:focus,
-button[data-stop]:focus {
+button[data-stop]:hover,
+button[data-start]:hover{
   scale: 1.1;
 }
 
