@@ -19,7 +19,8 @@ const options = {
   time_24hr: true,
   defaultDate: new Date(),
   minuteIncrement: 1,
-  onClose([selectedDate, ...selectedDates]) {
+  onClose(selectedDates) {
+    selectedDate = selectedDates[0]
       if (selectedDate < Date.now()) {
       btnEl.disabled = true;
       Notiflix.Notify.failure('Please choose a date in the future');
@@ -38,8 +39,7 @@ function startTimer() {
   timerId = setInterval(() => {
     const currentDate = Date.now();
     const timeLeft = selectedDate - currentDate;
-    console.log(selectedDate)
-
+    
     if (timeLeft < 1000) {
       clearInterval(timerId);
       return;
